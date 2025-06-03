@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamus EduTopia</title>
+    <link rel="stylesheet" href="service.css">
+</head>
+<body>
+    <header>
+        <div class="menu-toggle">☰</div>
+        <nav class="sidebar">
+            <ul>
+                <li><a href="about.html" style="color: black;">About Us</a></li>
+                <li><a href="contact.html" style="color: black;">Contact Us</a></li>
+                <li><a href="service.html" style="color: black;">Service</a></li>
+                <li><a href="translate.html" style="color: black;">Terjemahan</a></li>
+                <li><a href="login.html" style="color: black;">Log Out</a></li>
+            </ul>
+        </nav>
+        <p><a href="index.html" style="color: black;">Kamus EduTopia</a></p>
+        <img src="./gambar/logo.png" alt="logo">
+    </header>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Ketik, Bicara & foto...">
+        <div class="search-icons">
+            <span class="icon">🎙️</span>
+            <span class="icon">📷</span>
+        </div>
+        <button class="search-btn"></button>
+    </div>
+
+    <div class="translation-content">
+        <div class="language-options">
+            <p>Translate</p>
+            <select class="source-language-dropdown">
+                <option value="indonesia">Indonesia</option>
+                <option value="aceh">Aceh</option>
+                <option value="batak">Batak</option>
+                <option value="minang">Minang</option>
+                <option value="melayu">Melayu</option>
+                <option value="lampung">Lampung</option>
+            </select>
+            <p>To</p>
+            <select class="region-dropdown">
+                <option value="jawa">Jawa</option>
+                <option value="betawi">Betawi</option>
+            </select>
+        </div>
+        <textarea placeholder="Enter text to translate..."></textarea>
+        <p>Translated text will appear here...</p>
+    </div>
+</body>
+</html>

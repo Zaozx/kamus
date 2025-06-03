@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+body {
+    background-image: url(./gambar/background.jpg);
+    background-size: cover;
+    margin: 0;
+    font-family: "Space Grotesk", sans-serif;
+    color: #333;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    background-color: white;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 10;
+}
+header p {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    flex-grow: 1;
+}
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    padding: 5px;
+    z-index: 11;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #e0e0e0;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    z-index: 100;
+}
+header:hover .sidebar,
+.sidebar:hover {
+    left: 0;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    padding: 15px 20px;
+    color: #333;
+    cursor: pointer;
+}
+.sidebar ul li:hover {
+    background-color: #d0d0d0;
+}
+main {
+    margin-top: 80px;
+    padding: 20px;
+    flex-grow: 1;
+}
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+.column {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    width: 600px;
+    min-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.latar-belakang {
+    background-image: url(./gambar/batik.png);
+    background-position: right;
+    align-self: flex-start;
+}
+.visi-misi {
+    background-image: url(./gambar/buku.png);
+    background-position: right;
+    align-self: flex-end;
+}
+.why-choose-us {
+    background-image: url(./gambar/tanda_tanya.png);
+    background-position: right;
+    align-self: flex-start;
+    text-align: center;
+}
+.column h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: none;
+}
+.column p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 5px 0;
+}
+.column p strong {
+    font-weight: bold;
+}
